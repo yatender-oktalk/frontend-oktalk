@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="10px" viewBox="0 0 11 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>AA112B43-EBA4-4484-BBAC-C5A3ECFB32D3</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Consumption" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.7">
+        <g id="Desktop" transform="translate(-721.000000, -488.000000)" fill="#C7C7C7">
+            <g id="Content" transform="translate(490.000000, 120.000000)">
+                <g id="Item">
+                    <g id="Stats" transform="translate(10.270120, 365.361625)">
+                        <g id="Likes" transform="translate(221.215541, 0.893552)">
+                            <path d="M5.17749485,11.2163439 L4.44768317,10.5493128 C1.85559339,8.1894376 0.144310823,6.63303168 0.144310823,4.72289715 C0.144310823,3.16649123 1.36234136,1.94360087 2.91256204,1.94360087 C3.78833606,1.94360087 4.62887779,2.35291541 5.17749485,2.99973345 C5.72611191,2.35291541 6.56665364,1.94360087 7.44242766,1.94360087 C8.99264835,1.94360087 10.2106789,3.16649123 10.2106789,4.72289715 C10.2106789,6.63303168 8.49939631,8.1894376 5.90730654,10.5543661 L5.17749485,11.2163439 L5.17749485,11.2163439 Z" id="icon-likes"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,650 @@
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: Helvetica;*/
+    margin: 0;
+    color: #000;
+    font-size: 12px;
+    background-color: #eaedf0;
+    -webkit-font-smoothing: antialiased;
+    padding:0px 15px 15px 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.container {
+    margin: 0px 15px auto;
+}
+
+.container1 {
+    margin: 0px 15px 15px 15px;
+}
+
+.borderRed{
+    /*border:1px solid red;*/
+}
+
+.borderBlack{
+    /*border:1px solid black;*/
+}
+
+.companyLogo {
+    width: 90px;
+}
+.headerRow{
+    text-align: right;
+}
+.headerBox{
+    background-color: #ffffff;
+	box-shadow: 0 0.5px 2px 0 rgba(73, 73, 73, 0.2);
+    padding:0.5em;
+    margin-bottom: 1px;
+}
+.content-bodyWrapper{
+	border-radius: 2.5px;
+	background-image: linear-gradient(to bottom, #ffffff, #ffffff);
+    /*text-align: center;*/
+    margin-top: 15px;
+}
+.content-body{
+
+}
+.img-circular{
+ width: 50px;
+ height: 50px;
+ background-size: cover;
+ /*background-image: url('../img/showImg.png');*/
+ background-size: cover;
+ display: block;
+ border-radius: 25px;
+ background-position: center center;
+}
+
+.img-circular-2{
+ width: 30px;
+ height: 30px;
+ background-size: cover;
+ background-image: url('../img/showImg.png');
+ background-size: cover;
+ display: block;
+ border-radius: 15px;
+ background-position: center center;
+ top: 8px;
+}
+.img-circular-suggestions{
+ width: 50px;
+ height: 50px;
+ background-size: cover;
+ /*background-image: url('../img/showImg.png');*/
+ background-size: cover;
+ display: block;
+ border-radius: 25px;
+ background-position: center center;
+ margin-top: 16px;
+}
+.baseBox {
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 0.3px #e0e5eb;
+    margin: 10px auto;
+    padding: 15px;
+}
+.baseBoxDown {
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 0.3px #e0e5eb;
+    margin: 10px auto;
+    padding: 15px 15px 0px 15px;
+}
+.baseBoxLoadMore{
+    border-radius: 2px;
+    background-color: #dde4e6;
+    border: solid 0.3px #e0e5eb;
+    margin: 10px auto;
+    padding: 15px;
+    /*height:25.5px;*/
+    text-align: center;
+}
+.baseBoxUserComment {
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 0.3px #e0e5eb;
+    margin: 10px auto;
+    padding: 2px 10px 2px 10px;
+}
+
+.baseBoxMicrophone{
+    border-radius: 2px;
+    background-color: #ffffff;
+    /*border: solid 0.3px #e0e5eb;*/
+    margin: 10px auto;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    color:gray;
+}
+.baseBoxMicrophone span{
+   margin-left:5px;
+}
+
+.baseBox .userName {
+    color: #333333;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12.5px;
+    display: inline-block;
+    padding-top: 12px;
+    font-family: Helvetica;
+}
+
+.baseBox .userName .userTimeLapse {
+    position: relative;
+    font-size: 8px;
+    color: #999999;
+    font-family: Helvetica;
+}
+.baseBox h1.heading {
+	font-size: 15px;
+	font-weight: 300;
+    color: #222222;
+    margin-left: 4.33%;
+    margin-top: 4em;
+}
+
+
+.baseBox .soundBoxRow {
+    padding: 8px 0px;
+    margin:auto;
+    width: 96%;
+    text-align: center;
+}
+
+.baseBox .soundBoxRow .soundBoxColumn {
+    padding: 0px;
+}
+
+.baseBox .soundBoxRow .soundBoxColumn .time {
+    color: #7a7878;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.baseBox .soundBoxRow .soundBoxColumn.metaInfoColumn {
+    color: #999999;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 2px;
+}
+
+.baseBox .soundBoxRow .soundBoxColumn.metaInfoColumn .metaInfo {
+    padding-left: 10px;
+}
+
+.baseBox .soundBoxRow .soundBoxColumn.metaInfoColumn .metaInfo img{
+    height: 12px;
+    width: 12px;
+}
+.baseBox .desc-row {
+    margin: 10px 0px 10px 0px;
+    text-align: left;
+}
+.imageDiv{
+    background-image: url('../img/showImg.png');
+    background-size: cover;
+    /*text-align: center;*/
+    height: 185px;
+    position: center center;
+    background-position: center center;
+    margin-top:10px;
+}
+.imageDiv::after {
+    content: "";
+    background: rgba(45, 88, 35, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.alignBottom40{
+     bottom: 40px;
+    position: absolute;
+    width: 300px;
+    left: 16px;
+}
+.imageDiv > * {
+    z-index: 10;
+}
+.layer {
+    background-color: rgba(25, 25, 20, 0.45);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.layer2 {
+    background-color: rgba(25, 25, 20, 0.45);
+    position: absolute;
+    /*top: 0;*/
+    left: 0;
+    bottom:0px;
+    width: 100%;
+    height: 40px;
+}
+span.metaInfo {
+   color: white;
+   text-align: left;
+   text-overflow: ellipsis;
+   max-width: 320px;
+   overflow: hidden;
+   display: block;
+}
+.hrLine{
+    height:5px;
+}
+
+ .soundBoxRow {
+    padding: 8px 0px;
+    margin:auto;
+}
+.col-lg-12.col-md-12.col-sm-12.col-xs-12.soundBoxRow.marginSoundRow {
+    /*margin-bottom: -22px;*/
+}
+
+.row.moreVokes {
+    text-align: center;
+}
+
+.more-vokes-by{
+    font-size: 10px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+}
+.more-vokes-by-artist{
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.17;
+    color: #1caefa;
+    margin-top: -6px;
+}
+.listen-to-box{
+    margin:25px 0px 13px 0px;
+    text-align: center;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.11;
+	text-align: center;
+	color: #000000;
+}
+.listen-to-box span{
+    font-weight: 800;
+}
+.audioBox{
+  width: 98%;
+    margin-left: 4%;
+    padding-right: 2%;
+    /*padding-bottom: 18px;*/
+}
+.marginSoundRow{
+    margin-top:-10px;
+}ƒ
+
+.baseBoxUserComment .userName {
+    color: #333333;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12.5px;
+    display: inline-block;
+    padding-top: 12px;
+    font-family: Helvetica;
+}
+
+.baseBoxUserComment .userName .userTimeLapse {
+    position: relative;
+    font-size: 8px;
+    color: #999999;
+    font-family: Helvetica;
+}
+.baseBoxUserComment h1.heading {
+	font-size: 15px;
+	font-weight: 300;
+    color: #222222;
+    margin-left: 4.33%;
+    margin-top: 4em;
+}
+
+
+.baseBoxUserComment .soundBoxRow {
+    padding: 8px 0px;
+    margin:auto;
+    width: 96%;
+    text-align: center;
+    /*height:28px;*/
+}
+
+.baseBoxUserComment .soundBoxRow .soundBoxColumn {
+    padding: 0px;
+}
+
+.baseBoxUserComment .soundBoxRow .soundBoxColumn .time {
+    color: #7a7878;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.baseBoxUserComment .soundBoxRow .soundBoxColumn.metaInfoColumn {
+    color: #999999;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 2px;
+}
+
+.baseBoxUserComment .soundBoxRow .soundBoxColumn.metaInfoColumn .metaInfo {
+    padding-left: 10px;
+}
+
+.baseBoxUserComment .soundBoxRow .soundBoxColumn.metaInfoColumn .metaInfo img{
+    height: 12px;
+    width: 12px;
+}
+.baseBoxUserComment .desc-row {
+    margin: 10px 0px 10px 0px;
+    text-align: left;
+}
+
+
+
+.baseBoxDown .userName {
+    color: #333333;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12.5px;
+    display: inline-block;
+    padding-top: 12px;
+    font-family: Helvetica;
+}
+
+.baseBoxDown .userName .userTimeLapse {
+    position: relative;
+    font-size: 8px;
+    color: #999999;
+    font-family: Helvetica;
+}
+.baseBoxDown h1.heading {
+	font-size: 15px;
+	font-weight: 300;
+    color: #222222;
+    margin-left: 4.33%;
+    margin-top: 4em;
+}
+
+
+.baseBoxDown .soundBoxRow {
+    padding: 8px 0px;
+    margin:auto;
+    width: 96%;
+    text-align: center;
+}
+
+.baseBoxDown .soundBoxRow .soundBoxColumn {
+    padding: 0px;
+}
+
+.baseBoxDown .soundBoxRow .soundBoxColumn .time {
+    color: #7a7878;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.baseBoxDown .soundBoxRow .soundBoxColumn.metaInfoColumn {
+    color: #999999;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 2px;
+}
+
+.baseBoxDown .soundBoxRow .soundBoxColumn.metaInfoColumn .metaInfo {
+    padding-left: 10px;
+}
+
+.baseBoxDown .soundBoxRow .soundBoxColumn.metaInfoColumn .metaInfo img{
+    height: 12px;
+    width: 12px;
+}
+.baseBoxDown .desc-row {
+     margin: 10px 0px 10px 0px;
+    text-align: left;
+}
+.align-suggestions-center{
+    text-align: center;
+    padding:15px;
+    border-radius: 4px;
+	background-color: #ffffff;
+	border: solid 1px #dde4e6;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.listen-now{
+    height: 36px;
+	border-radius: 80px;
+	background-color: #1caefa;
+    color: white;
+    padding-top: 10px;
+}
+.suggestions-name{
+	font-size: 14px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.0;
+	color: #434343;
+}
+
+.margin-sug-name{
+    margin:10px 0px 0px 0px;
+}
+.one-man-many-voices {
+	font-family: Rubik;
+	font-size: 12px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.43;
+	text-align: center;
+	color: #4a4a4a;
+    padding:5px 10px 5px 10px;
+}
+.mask {
+	background-image: linear-gradient(to left, #76def8, #00a8ff);
+    text-align: center;
+    color:white;
+    padding:15px 15px 0px 15px;
+}
+.download-app{
+	font-size: 18px;
+	font-weight: 500;
+	font-stretch: normal;
+}
+.listen-to-funniest{
+	font-size: 15.6px;
+        padding: 0px 10px 0px 10px;
+}
+.downloadSrc{
+        width:140px;
+    }
+    .download-app-btn{
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .bottom-phone{
+        width:215px;
+    }
+    .vokal-is-a-audio-only {
+	/*width: 91.5px;*/
+	/*height: 17px;*/
+	font-family: Rubik;
+	font-size: 7px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	color: #4a4a4a;
+}
+.footer{
+    margin:10px 0px 10px 0px;
+    padding:15px;
+}
+.terms-policy{
+    display:inline-block;
+    font-size: 8px;
+    text-align: right;
+}
+.min-width{
+    display:inline-block;
+    margin-left:10px;
+}
+
+.row.baseBoxLoadMore:hover {
+    cursor: pointer;
+}
+@media(max-width:359px){
+    .companyLogo {
+        width: 56px;
+    }
+    .downloadSrc{
+        width:60px;
+    }
+    .img-circular-suggestions{
+            margin-left: -8px;
+    }
+    .footer{
+        text-align: center;
+    }
+    .min-width{
+    display:block;
+    margin-left:0px;
+}
+.terms-policy{
+    text-align: center;
+}
+
+}
+
+@media(min-width:360px) and (max-width:767px){
+     .companyLogo {
+        width: 56px;
+    }
+    .downloadSrc{
+        width:60px;
+    }
+     .img-circular-suggestions{
+        margin-left: -5px;
+    }
+    .footer{
+        text-align: center;
+    }
+    .min-width{
+    display:block;
+   margin-left:0px;
+}
+.max-width{
+    display:block;
+    width:100%;
+}
+.terms-policy{
+    text-align: center;
+}
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .companyLogo {
+        width: 56px;
+    }
+    .downloadSrc{
+        width:60px;
+    }
+    .audioBox {
+        /*width: 86%;*/
+        margin-left: 4%;
+        padding-right: 2%;
+        /*padding-bottom: 18px;*/
+    }
+    .img-circular-suggestions{
+            margin-left: -16px;
+    }
+
+}
+
+@media(min-width:992px) and (max-width:1199px){
+    .companyLogo {
+        width: 56px;
+    }
+    .downloadSrc{
+        width:60px;
+    }
+    .img-circular-suggestions{
+        margin-left: -5px;
+    }
+}
+
+@media(min-width:1200px){
+    .companyLogo {
+        width: 56px;
+    }
+    .downloadSrc{
+        width:60px;
+    }
+    .img-circular-suggestions{
+        margin-left: -12px;
+    }
+    /*.imageDiv{
+        height:300px;
+    }*/
+}

@@ -1,0 +1,1049 @@
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: #000;
+    font-size: 14px;
+    /*background-color: #eaedf0;*/
+    -webkit-font-smoothing: antialiased;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+/*.container {
+    margin: auto;
+}*/
+.removeLeftPadding {
+    padding-left: 0px;
+}
+.LeftPaddingDown{
+	padding-left:8em;
+}
+
+.companyLogo {
+    height: 30px;
+    width: 90px;
+}
+
+.companyName {
+    color: #1caefa;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.socialHandle {
+    text-align: right;
+}
+
+.socialHandle span {
+    color: #bec2c7;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0px 10px;
+}
+
+.socialHandle li {
+    display: inline-block;
+    color: #555555;
+    padding-left: 10px;
+}
+
+.socialHandle li span{
+    color: #555555;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: none;
+    padding: 0px;
+}
+
+.socialHandle li img {
+    height: 20px;
+    width: 20px;
+}
+.b-g{
+	width:100%;
+	height: 468.5px;
+	background-image: linear-gradient(to bottom, #e2eff6, #b7dcf1);
+	margin-left:auto;
+    margin-right:auto;
+    margin-top:0px;
+	padding: 15px;
+}
+.borderRed{
+/*border:1px solid red;*/
+}
+.borderBlack{
+/*border: 1px solid black;*/
+}
+
+.about-f-a-qs-blog-cont {
+	/*height: 9px;*/
+	font-family: Helvetica;
+	/*font-size: 7.5px;*/
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	color: #999999;
+}
+.about-f-a-qs-blog-cont-footer{
+	font-family: Helvetica;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	color: #999999;
+	/*background-color: black;*/
+}
+
+.about-f-a-qs-blog-cont ul{
+	/*background-color: black;*/
+	text-align: center;
+	margin-top:-30px
+}
+.about-f-a-qs-blog-cont-footer ul{
+	/*background-color: black;*/
+	/*text-align: center;*/
+	color: #999999;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+.about-f-a-qs-blog-cont ul li{
+	/*background-color: black;*/
+	display: inline-block;
+	margin: 0px 3px 0px 3px;
+}
+.about-f-a-qs-blog-cont-footer ul li{
+	/*background-color: black;*/
+	display: inline-block;
+	margin: 0px 3px 0px 3px;
+}
+.your-very-own-online {
+	width: 178.5px;
+	/*height: 500px;*/
+	font-family: Helvetica;
+	font-size: 21px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	color: #555555;
+	margin-top:5em;
+}
+
+.donec-ullamcorper-nu {
+	width: 148.5px;
+	height: 45px;
+	font-family: Helvetica;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	color: #555555;
+}
+
+.donec-ullamcorper-nu-width{
+	/*width: 180px;*/
+	/*height: 45px;*/
+	font-family: Helvetica;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	color: #555555;
+}
+/*#linkTextBox{
+
+}*/
+
+#linkTextBox {
+	    width: 230px;
+    height: 38px;
+    border-radius: 3.5px;
+	background-color: #ffffff;
+	border: solid 0.5px #cdd6dc;
+}
+
+input[type='text'] {
+    background-image: url(./img/India-flag.png);
+    background-position: 9.5px 9.5px;
+    background-repeat: no-repeat;
+	text-indent: 32px;
+}
+
+.enter-your-number-to {
+	/*width: 147px;*/
+	height: 12px;
+	font-family: Helvetica;
+	font-size: 9px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	color: #a6a6a6;
+	margin: 10px 0px 10px 0px;
+}
+.app-download-btn{
+	width: 90px;
+    height: 30px;
+    margin-left: -15px;
+}
+.app-download-btn-android{
+    width: 90px;
+    height: 30px;
+    margin-left: 0px;
+}
+
+.screen1 {
+    width: 214.5px;
+    position: relative;
+    z-index: 1;
+}
+.screenOneWrapper{
+	margin-top: 5em;
+    width: 50%;
+}
+.screen2 {
+    width: 204.5px;
+	vertical-align: baseline
+	
+}
+.screenTwoWrapper{
+	margin-top: 2.5em;
+    top: 50px;
+    left: 180px;
+    position: absolute;
+    width: 50%;
+}
+.boxinline{
+	display:inline-block;
+	margin-top:  2.5em;
+}
+.boxinlineDown{
+	display:inline-block;
+	margin-top:  2.5em;
+}
+.pixelOne{
+	max-height: 385px;
+    float: right;
+        padding-right: 6.5em;
+    margin-top: 3em;
+
+}
+.pixelOneDown{
+	max-height: 385px;
+    float: left;
+    padding-left: 5em;
+    margin-top: 3em;
+
+}
+.listeners {
+    /*width: 90.5px;*/
+    height: 25px;
+    font-size: 21px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #25aefa;
+    margin-top: 74px;
+	padding-left: 3em;
+    /*border: 1px solid black;*/
+}
+
+.vestibulum-id-ligula {
+    height: 14px;
+    /* font-family: Helvetica; */
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    color: #888888;
+	padding-left:4.9em;
+}
+.fixWidthPixelBoxImage{
+	/*max-width:100px;*/
+	float:left;
+	width:13%;
+}
+.fixWidthPixelBoxImageDown{
+	width:30%;
+	float:left;
+	text-align: right;
+	padding-right: 6%;
+}
+.fixWidthPixelBoxImageRight{
+	/*max-width:100px;*/
+	float:left;
+	width: 50%;
+}
+.fixWidthPixelBoxImageRightDown{
+	/*max-width:100px;*/
+	float: left;
+    width: 65%;
+}
+.descriptionImage{
+	width:50px;
+	height:auto;
+}
+.porta-aenean {
+    height: 13px;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    color: #585858;
+    margin-bottom: 6px;
+}
+.nullam-id-dolor-id-n {
+	/*width: 207.5px;*/
+	height: 26px;
+	/*font-family: Helvetica;*/
+	font-size: 9px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.44;
+	color: #555555;
+}
+
+.marginDown{
+	margin-bottom: 3em;
+	margin-top:3em;
+}
+.featured {
+	/*width: 88.5px;*/
+	height: 30px;
+	/*font-family: Helvetica;*/
+	font-size: 25px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	text-align: center;
+	color: #25aefa;
+}
+
+.vestibulum-id-ligula-copy {
+    height: 15px;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    color: #888888;
+}
+
+.width20 {
+    width: 21%;
+    margin: 3% 5% 3% 5%;
+    display: inline-block;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 0.5px #dedede;
+}
+.fullWidth{
+	width:100%;
+	text-align:center;
+}
+
+.bottomImageDiv{
+	width: 70px;
+    height: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.l-i-s-t-e-n {
+	    /* width: 36px; */
+    height: 21px;
+    /* font-family: Helvetica; */
+    font-size: 11px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.7;
+    text-align: center;
+    color: #ffffff;
+}
+
+.rectangle {
+	width: 90px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #25affb;
+}
+.alignCenter{
+	text-align: center;
+}
+
+.posts {
+	/*width: 41px;*/
+	/*height: 12px;*/
+	font-family: Helvetica;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	text-align: center;
+	color: #999999;
+}
+.paddings{
+	    padding-bottom: 10%;
+    padding-top: 3%;
+}
+.bottomBase{
+	background-color: #f5f5f5;
+}
+
+.your-very-own-online-bottom {
+	width: 153px;
+	height: 43px;
+	font-family: Helvetica;
+	font-size: 18px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	color: #555555;
+}
+
+.donec-ullamcorper-nu-bottom{
+	width: 126px;
+	height: 40.5px;
+	font-family: Helvetica;
+	font-size: 8.5px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.59;
+	color: #555555;
+}
+
+.footerLeftBlock div{
+	display: inline-block;
+	/*border:1px solid black;*/
+}
+.vokal-your-online {
+    width: 100%;
+    /* height: 6.5px; */
+    font-family: Helvetica;
+    font-size: 9.5px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    /* text-align: center; */
+    color: #626060;
+}
+.copyright-2016-al {
+	/*width: 96.5px;*/
+	height: 7.5px;
+	font-family: Helvetica;
+	font-size: 7.5px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	text-align: center;
+	color: #aaaaaa;
+}
+.footerLogo {
+    width: 28px;
+    height: auto;
+    filter: grayscale(100%);
+    vertical-align: bottom;
+}
+.footer{
+	    margin-bottom: 55px;
+}
+
+/*
+@media screen (min-width:200) and (max-width: 720) {
+
+  .about-f-a-qs-blog-cont{
+	  font-size: 7.5px;
+	  /*background-color: black;*/
+  /*}*/
+  
+/*}*/
+@media(max-width:359px){
+	#linkTextBox {
+	    width: 100%;
+    height: 37px;
+    border-radius: 2.5px;
+	background-color: #ffffff;
+	border: solid 0.5px #cdd6dc;
+}
+	.donec-ullamcorper-nu-width{
+	/*width: 180px;*/
+	/*height: 45px;*/
+	font-family: Helvetica;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.5;
+	color: #555555;
+}
+.companyLogo {
+     height: auto; 
+    width: 67px;
+}
+.socialHandle li img {
+    height: 16px;
+    width: 16px;
+}
+.screenOneWrapper {
+    margin-top: 4em;
+    width: 50%;
+    margin-left: -6px;
+}
+.screen1 {
+    width: 143.5px;
+    position: relative;
+    z-index: 1;
+}
+.screenTwoWrapper {
+    margin-top: 1.5em;
+    top: 49px;
+    left: 122px;
+    position: absolute;
+    width: 50%;
+}
+.screen2 {
+    width: 134.5px;
+    vertical-align: baseline;
+}
+.b-g {
+    width: 100%;
+    height: 656.5px;
+    background-image: linear-gradient(to bottom, #e2eff6, #b7dcf1);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding: 15px;
+}
+.fixWidthPixelBoxImageRight {
+    /* max-width: 100px; */
+    float: left;
+    width: 56%;
+}
+.nullam-id-dolor-id-n {
+    /* width: 207.5px; */
+    height: 26px;
+     font-family: Helvetica; 
+    font-size: 8px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    color: #555555;
+}
+.app-download-btn {
+    width: 90px;
+    height: 30px;
+}
+.app-download-btn-android {
+    width: 90px;
+    height: 30px;
+    margin-left: 11px;
+}
+
+
+.about-f-a-qs-blog-cont{
+			font-size: 7.5px;
+		}
+		.about-f-a-qs-blog-cont ul{
+			text-align: justify;
+			margin-top:5px;
+		}
+.about-f-a-qs-blog-cont ul li {
+			/* background-color: black; */
+			display: inline-block;
+			margin: 0px 2px 0px 2px;
+			
+			/*float: right;*/
+		}	
+		.pixelOne {
+			max-height: 385px;
+			 float: none; 
+			 padding-right: 0em; 
+			margin-top: 2em;
+		}	
+		.smallScreenPixelOne{
+			text-align: center;
+		}
+		.fixWidthPixelBoxImageRight {
+			/* max-width: 100px; */
+			float: left;
+			width: 54%;
+		}
+		.fixWidthPixelBoxImage {
+			/* max-width: 100px; */
+			float: left;
+			width: 25%;
+		}
+		.smallRemoveMargin{
+			margin-right:15px;
+		}
+		.fixWidthPixelBoxImageRight {
+			/* max-width: 100px; */
+			float: left;
+			width: 54%;
+		}
+		.fixWidthPixelBoxImage {
+			/* max-width: 100px; */
+			float: left;
+			width: 25%;
+		}
+		.boxinline {
+			display: inline-block;
+			margin-top: 2.5em;
+			margin-left: 4.1em;
+		}
+		.width20 {
+			width: 53%;
+			margin: 3%;
+			display: inline-block;
+			border-radius: 2px;
+			background-color: #ffffff;
+			border: solid 0.5px #dedede;
+		}
+		.smallReduceMargin{
+			margin-top:-1em;
+		}
+		.vokal-your-online {
+			width: 100%;
+			
+			font-family: Helvetica;
+			font-size: 10px;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			/* text-align: center; */
+			color: #716c6c;
+		}
+		.copyright-2016-al {
+			height: 7.5px;
+			font-family: Helvetica;
+			font-size: 7px;
+			font-weight: 400;
+			font-style: normal;
+			font-stretch: normal;
+			text-align: center;
+			color: #948b8b;
+		}
+		.footerLeftBlock{
+			text-align: center;
+			line-height: 10px;
+		}
+		.footerRightBlock{
+			text-align: center;
+			margin-top: 1.5em;
+		}
+		.your-very-own-online {
+			width: 208.5px;
+			/* height: 500px; */
+			font-family: Helvetica;
+			font-size: 25px;
+			font-weight: 500;
+			font-style: normal;
+			font-stretch: normal;
+			color: #555555;
+			margin-top: 2em;
+		}
+		.footerLeftBlock div {
+			display: block; 
+			margin-top: 8px;
+			text-align: center;
+		}
+		
+}
+
+@media(min-width:360px) and (max-width:767px){
+			#linkTextBox {
+			width: 100%;
+			height: 37px;
+			border-radius: 2.5px;
+			background-color: #ffffff;
+			border: solid 0.5px #cdd6dc;
+			}
+			.donec-ullamcorper-nu-width{
+				/*width: 180px;*/
+				/*height: 45px;*/
+				font-family: Helvetica;
+				font-size: 14px;
+				font-weight: 300;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.5;
+				color: #555555;
+			}
+				.footerLogo {
+					width: 28px;
+					height: auto;
+					filter: grayscale(100%);
+					vertical-align: bottom;
+					margin-bottom: 8px;
+				}
+				.app-download-btn {
+					width: 90px;
+					height: 30px;
+				}
+				.app-download-btn-android {
+					width: 90px;
+					height: 30px;
+					margin-left: 0px;
+				}
+				.about-f-a-qs-blog-cont{
+					font-size: 7.5px;
+				}
+					.about-f-a-qs-blog-cont ul{
+					text-align: justify;
+					margin-top:5px;
+				}
+				.about-f-a-qs-blog-cont ul li {
+					/* background-color: black; */
+					display: inline-block;
+					margin: 0px 2px 0px 2px;
+					/*float: right;*/
+				}
+				.socialHandle li img {
+					height: 16px;
+					width: 16px;
+				}
+				.your-very-own-online {
+					width: 178.5px;
+					/* height: 500px; */
+					font-family: Helvetica;;
+					font-size: 21px;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					color: #555555;
+					margin-top: 3em;
+				}
+				.b-g{
+					width:100%;
+					height: 707.5px;
+					background-image: linear-gradient(to bottom, #e2eff6, #b7dcf1);
+					margin-left:auto;
+					margin-right:auto;
+					margin-top:0px;
+					padding: 15px;
+				}
+				.screenTwoWrapper {
+					margin-top: 2.5em;
+					top: 49px;
+					left: 140px;
+					position: absolute;
+					width: 50%;
+				}
+				.screen1 {
+					width: 160.5px;
+					position: relative;
+					z-index: 1;
+				}
+				.screen2 {
+					width: 151px;
+					vertical-align: baseline;
+				}
+				.smallScreenPixelOne{
+					text-align: center;
+				}
+				.pixelOne {
+					max-height: 385px;
+					float: none; 
+					padding-right: 0em; 
+					margin-top: 2em;
+				}
+				.listeners {
+					/*width: 90.5px;*/
+					height: 25px;
+					font-size: 21px;
+					font-weight: normal;
+					font-style: normal;
+					font-stretch: normal;
+					color: #25aefa;
+					margin-top: 74px;
+					/*padding-left: 0px; */
+					/* border: 1px solid black; */
+				}
+
+				.smallRemoveMargin{
+					margin-right:15px;
+				}
+				.fixWidthPixelBoxImageRight {
+					/* max-width: 100px; */
+					float: left;
+					width: 54%;
+				}
+				.fixWidthPixelBoxImage {
+					/* max-width: 100px; */
+					float: left;
+					width: 25%;
+				}
+				.boxinline {
+					display: inline-block;
+					margin-top: 2.5em;
+					margin-left: 4.1em;
+				}
+				.width20 {
+					width: 53%;
+					margin: 3%;
+					display: inline-block;
+					border-radius: 2px;
+					background-color: #ffffff;
+					border: solid 0.5px #dedede;
+				}
+				.smallReduceMargin{
+					margin-top:-1em;
+				}
+				.vokal-your-online {
+					width: 100%;
+					font-family: Helvetica;
+					font-size: 9.5px;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					/* text-align: center; */
+					color: #776f6f;
+				}
+				.copyright-2016-al {
+					height: 7.5px;
+					font-family: Helvetica;
+					font-size: 7px;
+					font-weight: 400;
+					font-style: normal;
+					font-stretch: normal;
+					text-align: center;
+					color: #948b8b;
+				}
+				.footerLeftBlock{
+					text-align: center;
+					line-height: 10px;
+				}
+				.footerRightBlock{
+					text-align: center;
+					margin-top: 1.5em;
+				}
+				.footerLeftBlock div {
+			display: block; 
+			/* border: 1px solid black; */
+			text-align: center;
+		}
+}
+@media(min-width:768px) and (max-width:991px){
+	.pixelOne {
+    max-height: 385px;
+    float: right;
+    padding-right: 2.5em;
+    margin-top: 3em;
+}
+.footerLeftBlock{
+	padding-left: 59px;
+}
+.vestibulum-id-ligula {
+    height: 14px;
+     font-family: Helvetica; 
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    color: #888888;
+    /* padding-left: 4.9em; */
+}
+
+.listeners {
+    /*width: 90.5px;*/
+    height: 25px;
+    font-size: 21px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #25aefa;
+    margin-top: 74px;
+    /* padding-left: 3em; */
+    /* border: 1px solid black; */
+}
+.removePaddingIpad{
+	padding-left:0em;
+}
+.fixWidthPixelBoxImage {
+    /* max-width: 100px; */
+    float: left;
+    width: 18%;
+}
+.app-download-btn-android {
+			width: 90px;
+			height: 30px;
+			margin-left: 18px;
+		}
+		#linkTextBox {
+    width: 195px;
+    
+}
+.footerLeftBlock div {
+     display: block; 
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.footerLeftBlock div {
+    display: inline-block;
+    /* border: 1px solid black; */
+    /* text-align: center; */
+}
+.about-f-a-qs-blog-cont-footer {
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #999999;
+    /* background-color: black; */
+    padding-left: 74px;
+}
+.about-f-a-qs-blog-cont-footer ul {
+    /* background-color: black; */
+    /* text-align: center; */
+    color: #999999;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    padding-left: 27px;
+}
+.vokal-your-online {
+    width: 100%;
+    /* height: 6.5px; */
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    /* text-align: center; */
+    color: #716c6c;
+}
+.copyright-2016-al {
+    /* width: 96.5px; */
+    height: 7.5px;
+    font-family: Helvetica;
+    font-size: 7.5px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    color: #6d6464;
+}
+}
+@media(min-width:992px) and (max-width:1199px){
+	#linkTextBox {
+    width: 254px;
+    height: 38px;
+    border-radius: 3.5px;
+    background-color: #ffffff;
+    border: solid 0.5px #cdd6dc;
+}
+.about-f-a-qs-blog-cont-footer {
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #999999;
+    /* background-color: black; */
+    margin-left: 10em;
+    padding-left: 8em;
+}
+.footer {
+    margin-bottom: 55px;
+    margin-left: 3em;
+}
+.paddingL{
+	padding-left: 7px;
+}
+}
+@media(min-width:1200px){
+.yo{
+ padding-right: 13px;
+    /* margin-right: 8px; */
+    display: inline-block;
+    width: 45px;
+    height: 38px;
+    padding-top: 11.5px;
+}
+.footer {
+    margin-bottom: 55px;
+    margin-left: 5em;
+}
+.vokal-your-online {
+    width: 100%;
+    /* height: 6.5px; */
+    font-family: Helvetica;
+    font-size: 9.5px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    /* text-align: center; */
+    color: #626060;
+}
+.about-f-a-qs-blog-cont-footer {
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #999999;
+    /* background-color: black; */
+    padding-left: 8em;
+    margin-left: 18em;
+}
+.paddingL{
+	padding-left: 7px;
+}
+/*.yo:active{
+    vertical-align: top;
+    padding: 12px 10px 6px;
+}*/
+}	   

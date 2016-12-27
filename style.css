@@ -1,0 +1,233 @@
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: #000;
+    font-size: 14px;
+    background-color: #eaedf0;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.container {
+    margin: 15px auto;
+}
+
+.companyLogo {
+    height: 30px;
+    width: 90px;
+}
+
+.companyName {
+    color: #1caefa;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.socialHandle {
+    text-align: right;
+}
+
+.socialHandle span {
+    color: #bec2c7;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0px 10px;
+}
+
+.socialHandle li {
+    display: inline-block;
+    color: #555555;
+    padding-left: 10px;
+}
+
+.socialHandle li span{
+    color: #555555;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    padding: 0px;
+}
+
+.socialHandle li img {
+    height: 20px;
+    width: 20px;
+}
+
+.baseBox {
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 0.3px #e0e5eb;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.baseBox .userImg {
+    height: 36px;
+    width: 35px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.baseBox .userName {
+    color: #333333;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: .5;
+    display: inline-block;
+}
+
+.baseBox .userName .userTimeLapse {
+    position: relative;
+    top: 10px;
+    font-size: 11px;
+    color: #999999;
+}
+
+.baseBox h1.heading {
+	font-size: 15px;
+	font-weight: 300;
+/*	color: #222222;*/
+    color: #222222;
+}
+
+.baseBox .showImg {
+    width: 100%;
+    max-height: 350px;
+}
+
+.baseBox .soundBoxImg {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.baseBox .soundBoxRow {
+    padding: 8px 0px;
+    margin:auto;
+}
+
+.baseBox .soundBoxRow .soundBoxColumn {
+    padding: 0px;
+}
+
+.baseBox .soundBoxRow .soundBoxColumn .time {
+    color: #7a7878;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.baseBox .soundBoxRow .soundBoxColumn.metaInfoColumn {
+    color: #999999;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: right;
+    margin-left: 2px;
+}
+
+.baseBox .soundBoxRow .soundBoxColumn.metaInfoColumn .metaInfo {
+    padding-left: 10px;
+}
+
+.baseBox .soundBoxRow .soundBoxColumn.metaInfoColumn .metaInfo img{
+    height: 12px;
+    width: 12px;
+}
+
+h1.downloadInfo {
+    color: #555555;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.downloadSrcButtons {
+    margin: 15px 0px 40px;
+}
+/*.downloadSrc {*/
+/*    	width: 70%;*/
+/*        margin:auto;*/
+/*        margin-left:15%;*/
+	/*height: 22.5px;
+	border-radius: 1.5px;*/
+	/*background-color: #000000;*/
+/*}*/
+.copyRightBox {
+    color: #555555;
+    text-align: center;
+}
+.fa{
+    color:gray;
+}
+
+.copyRightBox .copyRightLogo {
+    height: 25px;
+    width: 25px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.copyRightBox .copyRightTagLine {
+    font-size: 15px;
+}
+
+.copyRightBox .copyRightInfo {
+    font-size: 12px;
+}
+audio {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 1024) {
+  .downloadSrc{
+    width: 100%;
+/*    margin-left:5%;*/
+  }
+  .downloadSrcButtons{
+    width: 60%;
+    margin-left: 30%;
+  }
+}
