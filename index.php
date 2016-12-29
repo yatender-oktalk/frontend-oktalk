@@ -232,11 +232,11 @@ src="https://www.facebook.com/tr?id=139995879754749&ev=PageView&noscript=1"
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-70921665-3', 'auto');
       ga('send', 'pageview');
-	var x = 0;
+	    var x = 0;
         var aud = document.getElementsByTagName('audio')[0];
-	window.onload = function(){
-		aud.play();
-	};
+        window.onload = function(){
+            aud.play();
+        };
         aud.onplay = function() {
 	    console.log("audio played.");
             if(x==0){

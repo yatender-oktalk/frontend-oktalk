@@ -68,6 +68,43 @@ h1 {
     /*border:1px solid black;*/
 }
 
+.socialHandle {
+    text-align: right;
+}
+
+.socialHandle span {
+    color: #bec2c7;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0px 10px;
+}
+
+.socialHandle li {
+    display: inline-block;
+    color: #555555;
+    padding-left: 10px;
+}
+
+.socialHandle li span{
+    color: #555555;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    padding: 0px;
+}
+
+.socialHandle li img {
+    height: 20px;
+    width: 20px;
+}
+
+.rectangle-16{
+    background-image: linear-gradient(to left, #76def8, #00a8ff);
+    text-align: center;
+}
+
 .companyLogo {
     width: 90px;
 }
@@ -169,8 +206,8 @@ h1 {
 .baseBox .userName {
     color: #333333;
     font-weight: 600;
-    font-size: 10px;
-    line-height: 12.5px;
+    font-size: 13px;
+    line-height: 14.5px;
     display: inline-block;
     padding-top: 12px;
     font-family: Helvetica;
@@ -178,7 +215,7 @@ h1 {
 
 .baseBox .userName .userTimeLapse {
     position: relative;
-    font-size: 8px;
+    font-size: 10px;
     color: #999999;
     font-family: Helvetica;
 }
@@ -218,6 +255,8 @@ h1 {
 
 .baseBox .soundBoxRow .soundBoxColumn.metaInfoColumn .metaInfo {
     padding-left: 10px;
+    float:left;
+    width:108px;
 }
 
 .baseBox .soundBoxRow .soundBoxColumn.metaInfoColumn .metaInfo img{
@@ -281,9 +320,21 @@ span.metaInfo {
    max-width: 320px;
    overflow: hidden;
    display: block;
+   font-size: 13px;
 }
 .hrLine{
     height:5px;
+}
+.download-vokal {
+	/*width: 54px;*/
+	/*height: 8.5px;*/
+	font-family: Rubik;
+	font-size: 22px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	color: #ffffff;
+    padding-top:10px;
 }
 
  .soundBoxRow {
@@ -338,8 +389,8 @@ span.metaInfo {
 .baseBoxUserComment .userName {
     color: #333333;
     font-weight: 600;
-    font-size: 10px;
-    line-height: 12.5px;
+    font-size: 13px;
+    line-height: 14.5px;
     display: inline-block;
     padding-top: 12px;
     font-family: Helvetica;
@@ -347,7 +398,7 @@ span.metaInfo {
 
 .baseBoxUserComment .userName .userTimeLapse {
     position: relative;
-    font-size: 8px;
+    font-size: 10px;
     color: #999999;
     font-family: Helvetica;
 }
@@ -453,6 +504,8 @@ span.metaInfo {
 
 .baseBoxDown .soundBoxRow .soundBoxColumn.metaInfoColumn .metaInfo {
     padding-left: 10px;
+    width:108px;
+    float:left;
 }
 
 .baseBoxDown .soundBoxRow .soundBoxColumn.metaInfoColumn .metaInfo img{
@@ -518,11 +571,14 @@ span.metaInfo {
         padding: 0px 10px 0px 10px;
 }
 .downloadSrc{
-        width:140px;
+        width:160px;
     }
     .download-app-btn{
         margin-top:10px;
         margin-bottom:10px;
+    }
+    .download-app-btn-top{
+        margin-bottom:15px;
     }
     .bottom-phone{
         width:215px;
@@ -556,7 +612,7 @@ span.metaInfo {
 }
 @media(max-width:359px){
     .companyLogo {
-        width: 56px;
+        width: 90px;
     }
     .downloadSrc{
         width:60px;
@@ -573,13 +629,19 @@ span.metaInfo {
 }
 .terms-policy{
     text-align: center;
+    font-size:13px;
 }
-
+.vokal-is-a-audio-only{
+    font-size:13px;
+}
+.content-bodyWrapper{
+    margin-top: 0px;
+}
 }
 
 @media(min-width:360px) and (max-width:767px){
      .companyLogo {
-        width: 56px;
+        width: 90px;
     }
     .downloadSrc{
         width:60px;
@@ -600,12 +662,16 @@ span.metaInfo {
 }
 .terms-policy{
     text-align: center;
+    font-size:13px;
+}
+.content-bodyWrapper{
+    margin-top: 0px;
 }
 }
 
 @media(min-width:768px) and (max-width:991px){
     .companyLogo {
-        width: 56px;
+        width: 90px;
     }
     .downloadSrc{
         width:60px;
@@ -624,7 +690,7 @@ span.metaInfo {
 
 @media(min-width:992px) and (max-width:1199px){
     .companyLogo {
-        width: 56px;
+        width: 90px;
     }
     .downloadSrc{
         width:60px;
@@ -636,7 +702,7 @@ span.metaInfo {
 
 @media(min-width:1200px){
     .companyLogo {
-        width: 56px;
+        width: 90px;
     }
     .downloadSrc{
         width:60px;
