@@ -286,7 +286,7 @@ var start = function (context, urls, hideMoreVoke) {
                 $('#android').show();
                 $('#appleup').hide();
                 $('#androidup').show();
-                 $('#applemid').hide();
+                $('#applemid').hide();
                 $('#androidmid').show();
             }
         } else {
@@ -320,6 +320,8 @@ var urls = {
     twittertitle: '',
     title: '',
     glink: '',
+    glinkmid: '',
+    glinktop: '',
     fburl: '',
     iosurl: '',
     handurl: '',
@@ -360,7 +362,9 @@ function successContentId(data) {
     urls.realurl = 'https://api.oktalk.com/web2/channel/handle/' + handle + '/' + data.content_id;
     urls.requrl = 'http://api.oktalk.com/ver3/channels/user/1/handle/' + handle + '/content/' + data.content_id;
     urls.origurl = 'android-app://com.oktalk/http/vkl.fm/ch/' + handle + '/' + data.content_id;
-    urls.glink = 'https://play.google.com/store/apps/details?id=com.oktalk.app&amp;referrer=utm_source%3DWebsite%26utm_campaign%3DContentPage%26utm_medium%3D' + handle + '%26utm_content%3D' + data.content_id;
+    urls.glinkbottom = 'https://play.google.com/store/apps/details?id=com.oktalk.app&amp;referrer=utm_source%3DWebsite%26utm_campaign%3Dfooter_CP_' + handle + '%26utm_content%3D' + data.content_id;
+    urls.glinkmid = 'https://play.google.com/store/apps/details?id=com.oktalk.app&amp;referrer=utm_source%3DWebsite%26utm_campaign%3Dmid_CP_' + handle + '%26utm_content%3D' + data.content_id;
+    urls.glinktop = 'https://play.google.com/store/apps/details?id=com.oktalk.app&amp;referrer=utm_source%3DWebsite%26utm_campaign%3Dheader_CP_' + handle + '%26utm_content%3D' + data.content_id;
     urls.iosurl = 'vokal://com.vokal/play?contentID=' + data.content_id;
     urls.fburl = 'http://getvokal.com/content.php?hn=' + handle + '&cn=' + data.content_id;
     urls.handurl = 'http://api.oktalk.com/web/channel/handle/' + handle;

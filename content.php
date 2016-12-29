@@ -147,7 +147,7 @@ src="https://www.facebook.com/tr?id=139995879754749&ev=PageView&noscript=1"
                  <div class="col-xs-12 hidden-lg hidden-md hidden-sm rectangle-16">
                    <div> <p class="download-vokal">Download Vokal</p></div>
                     <div class="download-app-btn-top" id="androidup">
-                        <a href="{{urls.glink}}" onclick="sendGA('Download App','Google_Top')" target="_blank">
+                        <a href="{{urls.glinktop}}" onclick="sendGA('Download App','Google_Top')" target="_blank">
                             <img class="downloadSrcBottom" src="./img/downloadSrcAndroid.svg" />
                         </a>
                     </div>
@@ -254,7 +254,7 @@ src="https://www.facebook.com/tr?id=139995879754749&ev=PageView&noscript=1"
                  <div class="col-xs-12 hidden-lg hidden-md hidden-sm rectangle-16">
                    <div> <p class="download-vokal">Download Vokal</p></div>
                     <div class="download-app-btn-top" id="androidmid">
-                        <a href="{{urls.glink}}" onclick="sendGA('Download App','Google_Mid')" target="_blank">
+                        <a href="{{urls.glinkmid}}" onclick="sendGA('Download App','Google_Mid')" target="_blank">
                             <img class="downloadSrcBottom" src="./img/downloadSrcAndroid.svg" />
                         </a>
                     </div>
@@ -372,7 +372,7 @@ src="https://www.facebook.com/tr?id=139995879754749&ev=PageView&noscript=1"
             </p>
         </div>
         <div class="download-app-btn" id="android">
-            <a href="{{urls.glink}}" onclick="sendGA('Download App','Google_Bottom')" target="_blank">
+            <a href="{{urls.glinkbottom}}" onclick="sendGA('Download App','Google_Bottom')" target="_blank">
                 <img class="downloadSrcBottom" src="./img/downloadSrcAndroid.svg" />
             </a>
         </div>
