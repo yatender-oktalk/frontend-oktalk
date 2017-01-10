@@ -342,9 +342,9 @@ input[type='text'] {
 }
 .nullam-id-dolor-id-n {
 	/*width: 207.5px;*/
-	height: 26px;
+	height: 64px;
 	/*font-family: Helvetica;*/
-	font-size: 9px;
+	font-size: 12px;
 	font-weight: 300;
 	font-style: normal;
 	font-stretch: normal;
@@ -572,9 +572,9 @@ input[type='text'] {
 }
 .nullam-id-dolor-id-n {
     /* width: 207.5px; */
-    height: 26px;
+    /*height: 52px;*/
      font-family: Helvetica; 
-    font-size: 8px;
+    font-size: 11px;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -699,6 +699,9 @@ input[type='text'] {
 			margin-top: 8px;
 			text-align: center;
 		}
+		.why-love-vokal{
+    font-size:21px;
+}
 		
 }
 
@@ -861,6 +864,9 @@ input[type='text'] {
 					text-align: center;
 					color: #948b8b;
 				}
+				.why-love-vokal{
+    font-size:21px;
+}
 				.footerLeftBlock{
 					text-align: center;
 					line-height: 10px;

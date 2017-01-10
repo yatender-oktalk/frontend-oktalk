@@ -164,7 +164,7 @@ h1 {
     background-color: #ffffff;
     border: solid 0.3px #e0e5eb;
     margin: 10px auto;
-    padding: 15px;
+    padding: 15px 15px 0px 15px;
 }
 .baseBoxDown {
     border-radius: 2px;
@@ -195,7 +195,7 @@ h1 {
     background-color: #ffffff;
     /*border: solid 0.3px #e0e5eb;*/
     margin: 10px auto;
-    padding-bottom: 15px;
+    /*padding-bottom: 15px;*/
     padding-left: 15px;
     color:gray;
 }
@@ -336,7 +336,17 @@ span.metaInfo {
 	color: #ffffff;
     padding-top:10px;
 }
-
+.download-vokal-mid {
+	/*width: 54px;*/
+	/*height: 8.5px;*/
+	font-family: Rubik;
+	font-size: 18px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	color: #ffffff;
+    padding-top:10px;
+}
  .soundBoxRow {
     padding: 8px 0px;
     margin:auto;
@@ -610,7 +620,17 @@ span.metaInfo {
 .row.baseBoxLoadMore:hover {
     cursor: pointer;
 }
+.changeColor:hover {
+    cursor: pointer;
+    color: #00a8ff;
+    font-size:13px;
+    /*background-color: green;*/
+}
+
 @media(max-width:359px){
+    .more-vokes-by{
+        margin-top:15px;
+    }
     .companyLogo {
         width: 90px;
     }
@@ -636,6 +656,9 @@ span.metaInfo {
 }
 .content-bodyWrapper{
     margin-top: 0px;
+}
+.why-love-vokal{
+    font-size:23px;
 }
 }
 
@@ -667,6 +690,10 @@ span.metaInfo {
 .content-bodyWrapper{
     margin-top: 0px;
 }
+.more-vokes-by{
+        margin-top:15px;
+    }
+    
 }
 
 @media(min-width:768px) and (max-width:991px){

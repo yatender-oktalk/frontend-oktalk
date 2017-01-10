@@ -62,6 +62,7 @@ $iosurl='vokal://com.vokal/play?contentID='.$content_id;
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style4.css" />
 
 
@@ -73,6 +74,7 @@ $iosurl='vokal://com.vokal/play?contentID='.$content_id;
     <meta name="twitter:title" content="<?php echo $twittertitle; ?>">
     <meta name="twitter:image" content="<?php echo $fbimg; ?>">
     <meta name="twitter:description" content="Tap to listen">
+    <meta name="description" content="">
 
     <meta property="fb:app_id" content="1715260478754437">
     <meta property="og:site_name" content="Vokal">
@@ -84,7 +86,9 @@ $iosurl='vokal://com.vokal/play?contentID='.$content_id;
     <meta property="og:image:height" content="500">
     <meta property="og:description" content="Tap to listen">
 
-    <title>Vokal</title>
+    
+
+    <title>Vokal - Create & share fun audio. Listen to voices of RJs & comedians</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 	<!-- Facebook Pixel Code -->
@@ -179,41 +183,46 @@ src="https://www.facebook.com/tr?id=139995879754749&ev=PageView&noscript=1"
             <div class="row">
             </div>
             <div class="row imageDiv borderBlack">
+
                 <div class="layer">
-                    <div class="soundBoxRow">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 soundBoxColumn metaInfoColumn row">
-                            <span class="metaInfo">
-                                    <img src="./img/icon-plays.svg"/>
-                                    {{content.played}} Listens
-                                </span>
-                                {{#if content.likes}}
-                                 <span class="metaInfo">
-                                    <img src="./img/icon-likes.svg"/>
-                                    {{content.likes}} Likes
-                                </span>
-                                {{/if}}
+                    <div class="playPause"  onClick="handleFirstToggle(0,1)">
+                        <div class="soundBoxRow">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 soundBoxColumn metaInfoColumn row">
+                                <span class="metaInfo">
+                                        <img src="./img/icon-plays.svg"/>
+                                        {{content.played}} Listens
+                                    </span>
+                                    {{#if content.likes}}
+                                    <span class="metaInfo">
+                                        <img src="./img/icon-likes.svg"/>
+                                        {{content.likes}} Likes
+                                    </span>
+                                    {{/if}}
+                            </div>
                         </div>
-                    </div>
-                    <div class="row alignBottom40">
-                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 soundBoxColumn metaInfoColumn desc-row row">
-                            <span class="metaInfo">
-			{{formatComment content.title}}                        
-            </span>
+                        <div class="row alignBottom40">
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 soundBoxColumn metaInfoColumn desc-row row">
+                                <span class="metaInfo">
+                                    {{formatComment content.title}}                        
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <div class="layer2">
                         <div id="player" class="aplayer">
                         </div>
                     </div>
+
                 </div>
             </div>
-            <div class="row">
+            {{#if content.no_of_comments}}
+            <div class="row changeColor" onClick="getMoreComments()" data-toggle="tooltip" title="Load More Comments!">
                 <div class="baseBoxMicrophone">
                     <i class="fa fa-microphone" aria-hidden="true"></i>
-                    <span>{{handleComments content.no_of_comments}}</span>
+                    <span class="changeColor">{{handleComments content.no_of_comments}}</span>
                 </div>
             </div>
-            {{#if comments.length}} {{#each comments}}
+             {{#each comments}}
             <div class="row baseBoxUserComment">
                 <div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 img-circular-2">
@@ -244,15 +253,13 @@ src="https://www.facebook.com/tr?id=139995879754749&ev=PageView&noscript=1"
                 </div>
             </div>
             {{/each}}
-            <div class="row baseBoxLoadMore" onclick="getMoreComments()">
-<span>Load More Comments</span>
-</div>
+            
  
-{{/if}}
+    {{/if}}
 </div>
     <div class="row">
                  <div class="col-xs-12 hidden-lg hidden-md hidden-sm rectangle-16">
-                   <div> <p class="download-vokal">Download Vokal</p></div>
+                   <div> <p class="download-vokal-mid">Listen to @{{content.handle}} on Vokal</p></div>
                     <div class="download-app-btn-top" id="androidmid">
                         <a href="{{urls.glinkmid}}" onclick="sendGA('Download App','Google_Mid')" target="_blank">
                             <img class="downloadSrcBottom" src="./img/downloadSrcAndroid.svg" />
@@ -289,8 +296,8 @@ src="https://www.facebook.com/tr?id=139995879754749&ev=PageView&noscript=1"
 
     </div>
     <div class="row imageDiv borderBlack">
-        <div class="layer">
-            <div class="soundBoxRow">
+        <div class="layer" >
+            <div class="playPause" onClick="handleFirstToggle({{setIndex @index}},1);updatePlay({{@index}}, 1)"><div class="soundBoxRow">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 soundBoxColumn metaInfoColumn row">
                                 <span class="metaInfo">
                                     <img src="./img/icon-plays.svg"/>
@@ -311,18 +318,20 @@ src="https://www.facebook.com/tr?id=139995879754749&ev=PageView&noscript=1"
                                         {{formatComment title}}
                                     </span>
                 </div>
-            </div>
+            </div></div>
             <div class="layer2">
                 <div id="player{{@index}}" class="aplayer" onclick="updatePlay({{@index}}, 1)">
-</div>
-</div>
+                </div>
+            </div>
 </div>
 </div>
 <div class="row">
+    {{#if no_of_comments}}
     <div class="baseBoxMicrophone">
         <i class="fa fa-microphone" aria-hidden="true"></i>
         <span>{{handleComments no_of_comments}}</span>
     </div>
+    {{/if}}
 </div>
 </div>
 {{/each}}
@@ -340,7 +349,7 @@ src="https://www.facebook.com/tr?id=139995879754749&ev=PageView&noscript=1"
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-sug-name">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin -sug-name">
                 <p class="suggestions-name">{{name}}</p>
             </div>
         </div>
@@ -368,7 +377,7 @@ src="https://www.facebook.com/tr?id=139995879754749&ev=PageView&noscript=1"
         </div>
         <div class="listen-to-funniest">
             <p>
-                Listen to the funniest voices in India only on the Vokal App
+                Create & Listen to fun voices only on Vokal App
             </p>
         </div>
         <div class="download-app-btn" id="android">
@@ -382,7 +391,7 @@ src="https://www.facebook.com/tr?id=139995879754749&ev=PageView&noscript=1"
             </a>
         </div>
         <div>
-            <img class="bottom-phone" src="./img/deviceNew@3x.png" />
+            <img class="bottom-phone" src="./img/device@3x.png" />
         </div>
 </div>
 </div>
@@ -395,7 +404,7 @@ src="https://www.facebook.com/tr?id=139995879754749&ev=PageView&noscript=1"
                     <img class="companyLogo" src="img/logo.png" />
                 </a>
             </p>
-            <p class="vokal-is-a-audio-only">Vokal is a audio only app for India’s best entertainers.</p>
+            <p class="vokal-is-a-audio-only">Vokal - Fun with Audio</p>
         </div>
         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 terms-policy">
             <div class="min-width"><a href="http://getvokal.com/about.html">ABOUT</a></div>

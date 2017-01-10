@@ -2,6 +2,11 @@ var ap = '';
 var apv = ['0', '1'];
 var start = function (context, urls, hideMoreVoke) {
     $(function () {
+        if (!hideMoreVoke) {
+            context.comments = [];
+        }
+        var t = context.content.name + decodeURIComponent(context.content.title) + '| Listen on Vokal';
+        document.title = t;
         $('#android').hide();
         $('#apple').hide();
         var isMobile = {
@@ -80,6 +85,10 @@ var start = function (context, urls, hideMoreVoke) {
             return timeSince(date);
         });
 
+        Handlebars.registerHelper("setIndex", function (index) {
+            return index + 1;
+        });
+
         Handlebars.registerHelper("formatComment", function (comment) {
             try {
                 console.log(comment);
@@ -101,7 +110,8 @@ var start = function (context, urls, hideMoreVoke) {
                     return count + ' comments';
                 }
             } else {
-                return "0 comment";
+
+                return "";
             }
         });
 
@@ -111,7 +121,7 @@ var start = function (context, urls, hideMoreVoke) {
 
         // Add the compiled html to the page
         $('.content-placeholder').html(theCompiledHtml);
-
+        $("meta[name='description']").attr('content', 'Listen to ' + decodeURIComponent(context.content.title) + ' by ' + context.content.name + ' on Vokal');
 
         var moreV = context.moreVokes === undefined ? [] : context.moreVokes;
         for (var i = 0; i < moreV.length; i++) {
@@ -171,7 +181,7 @@ var start = function (context, urls, hideMoreVoke) {
         ap.on('pause', function () {
             if (isMobileN) {
                 x = 1;
-                console.log('pause');
+                // console.log('pause');
             }
         });
         //background images set section
@@ -233,13 +243,13 @@ var start = function (context, urls, hideMoreVoke) {
             $('.baseBoxLoadMore').hide();
             ap.pause();
         } else {
-            if (isMobile) {
+            if (isMobileN) {
                 if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {
                     increaseOne();
                 }
             }
 
-            if (!isMobile) {
+            if (!isMobileN) {
                 increaseOne();
             }
         }
@@ -294,8 +304,35 @@ var start = function (context, urls, hideMoreVoke) {
             $('#android').show();
             $('#apple').show();
         }
+
+
+        var playPauseDiv = parseFloat($('.imageDiv').height())-40;
+        $('.playPause').css('height',playPauseDiv);
     });
 }
+
+function handleFirstToggle(i, flag) {
+    if (flag) {
+        if (document.getElementsByClassName('aplayer-button')[i].classList.contains('aplayer-play')) {
+            if (i === 0) {
+                ap.play();
+            } else {
+                i = i - 1;
+                apv[i].play();
+            }
+        } else {
+            if (i === 0) {
+                ap.pause();
+            } else {
+                i = i - 1;
+                apv[i].pause();
+            }
+        }
+    }
+    // console.log('inside toggle');
+
+}
+
 var universalData = '';
 function getParameterByName(name, url) {
     if (!url) {
@@ -308,7 +345,6 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-
 
 var handle = getParameterByName('hn');
 var reference = getParameterByName('cn');
@@ -345,10 +381,9 @@ function doGetCall(url, isPause) {
         type: 'GET',
     });
 }
-
+// $('[data-toggle="tooltip"]').tooltip({});  
 function doTemplating(data, isPause) {
     if (data) {
-
         urls.title = data.content.title || 'Voke';
         urls.twittertitle = urls.title + ' by ' + handle;
         universalData = data;
